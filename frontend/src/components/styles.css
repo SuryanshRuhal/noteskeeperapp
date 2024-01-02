@@ -1,0 +1,226 @@
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    padding:0px 16px;
+}
+header{
+    background-color:#ffc107;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 black;
+}
+header h1{
+    color: #ffffff;
+    font-family: "mcLaren",cursive;
+    font-weight: 200;
+ }
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color:  #c8a451;
+    height: 2.5rem;
+    bottom: 0;
+ }
+footer p{
+    color:rgb(255, 255, 255)
+ }
+
+.note{
+    background-color: #b3ab9d;
+    text-align: center;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 10px;
+    padding: 17px 21px;
+    min-width: 300px;
+    max-width: 387px;
+    border: 5px solid #4d4949;
+    float: left;
+    min-height: 150px;
+    margin: 79px 25px;
+}
+
+.mh{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.notecontainer{
+  
+    padding: 25px 14px;
+}
+.note h1{
+    color: #ffffff;
+    font-family: "mcLaren",cursive;
+    font-weight: 200;
+}
+.note p{
+    color:antiquewhite;
+    padding-top: 10px;   
+     font-size: 1.4rem;
+
+}
+.createarea{
+    padding:0px 0px;
+    margin:0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.noteform{
+    padding:16px 0px;
+    margin-top:28px;
+    background-color: #cdc9c2;
+    text-align: center;
+    box-shadow: 0 0 10px 0 black;
+}
+.c{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 22px;
+    min-height: 100px;
+    border: none;
+    outline: none;
+    margin:5px;
+    font-size: 1.3rem;
+}
+.t{
+    width: 80%;
+    padding: 0.5rem;
+    right: 26px;
+    position: relative;
+    margin:5px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    
+}
+
+.bd{
+    right:-79px !important; 
+    bottom:-45px !important ;
+}
+
+.b{
+  position: absolute;
+  right: -9px;
+  bottom: -70px;
+  background: #f5ba13 !important;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+#lgpage{
+    background-color: #012539;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lgcontainer{
+    padding: 43px 44px;
+    margin: 0px 0px;
+    min-height: 484px;
+    display: flex;
+    border: 5px solid #6d9f60;
+    background-color: #073047;
+    flex-direction: column;
+    border-radius: 14px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 12px 0 black;
+    align-items: center;
+}
+.lgform{
+    padding: 31px 23px;
+    max-width: 420px;
+    margin-top: 18px;
+    background-color: #073647;
+    text-align: center;
+    box-shadow: 0 0 3px 0 black;
+}
+.glow{
+    background-color: #6d9f60;
+    height: 563px;
+    filter: blur(50px);
+    width: 518px;
+    position: absolute;
+    z-index: 2
+
+}
+.glowlg{
+    background-color: #6d9f60bf;
+    height: 491px;
+    filter: blur(50px);
+    width: 431px;
+    position: absolute;
+    z-index: 2;
+}
+.tl{
+    width: 100%;
+    padding: 0.5rem;
+    margin:5px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    
+}
+.button{
+    background-color: #6d9f60;
+    padding: 6px 12px;
+    margin-top: -7px;
+    border: 2px solid rgb(24, 22, 26);
+    cursor: pointer;
+    border-radius: 15px;
+    color: azure;
+    box-shadow: 5px 2px 10px -4px #494848;
+}
+.button:hover{
+    color:#026b5a;
+    background-color: #d6d57a;
+}
+.eye{
+    position: relative; 
+    top: -36px;
+    right: -166px;
+}
+.lgeye{
+    position: relative; 
+    top: -38px;
+    right: -122px;
+}
+.switchlogin{
+    font-size: 0.95rem;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "mcLaren",cursive;
+    color: #6d9f60;
+    font-weight: 200;
+}
+.lgcontainer h1{
+    color:#6d9f60;
+}
+.an{
+    color: #82f7ed;
+    font-size: medium;
+    font-weight: 200;
+}
+.an:hover{
+    color:#d6d57a;
+    cursor: pointer;
+}
