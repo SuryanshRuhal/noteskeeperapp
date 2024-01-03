@@ -36,7 +36,7 @@ function Createarea(props){
 
                 const {data} = await axios.post(
                     
-                    "http://localhost:8080/note",
+                    "/note",
                     textinput,
                     config
                 );

@@ -33,7 +33,7 @@ function Home(){
             }
             };
             setloading(true);
-            const {data} = await axios.get(`http://localhost:8080/note/${userData.data._id}`,config);
+            const {data} = await axios.get(`/note/${userData.data._id}`,config);
 
             console.log(data);
             // setnotes(()=>{
