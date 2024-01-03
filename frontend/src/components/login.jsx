@@ -56,7 +56,7 @@ function Login(){
             };
 
             const response= await axios.post(
-                "http://localhost:8080/user/login/",
+                "/user/login/",
                 contact,
                 config,
             );
@@ -86,7 +86,7 @@ function Login(){
             };
 
             const response= await axios.post(
-                "http://localhost:8080/user/register/",
+                "/user/register/",
                 contact,
                 config,
             );
