@@ -59,7 +59,7 @@ function Home(){
                 } 
             }
             setloading(true);
-            const {data} = await axios.get(`http://localhost:8080/note/delete/${id}`,
+            const {data} = await axios.get(`/note/delete/${id}`,
             config);
 
             console.log(data);
