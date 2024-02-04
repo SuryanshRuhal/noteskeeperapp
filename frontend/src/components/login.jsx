@@ -64,7 +64,7 @@ function Login(){
             setLogInStatus({ msg: "Success", key: Math.random() });
             setloading(false); 
             localStorage.setItem("userData",JSON.stringify(response));
-            navigate("/home");
+            navigate("/homes/welcome");
              
         } catch (error) {
             setLogInStatus({
@@ -94,7 +94,7 @@ function Login(){
             setSignInStatus({ msg: "Success", key: Math.random() });
             setloading(false); 
             localStorage.setItem("userData",JSON.stringify(response));
-            navigate("/home");
+            navigate("/homes/welcome");
             
         } catch (error) {
             console.log(error);
@@ -121,8 +121,8 @@ return (
         open={loading}>
         <CircularProgress color="secondary" />
     </Backdrop>
-<section id="lgpage">
-    <div>
+   <section id="lgpage">
+   <div>
     <div className="glowcontainer">
     <div className={!signup?"glow":"glowlg"}></div>
     </div>

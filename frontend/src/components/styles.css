@@ -4,8 +4,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 body{
-    background-color: #eee;
+    background-color: #3f3b6361;
     padding:0px 16px;
 }
 header{
@@ -24,7 +25,7 @@ footer{
     width: 100%;
     text-align: center;
     position: fixed;
-    background-color:  #c8a451;
+    background-color:  #c5bab6;
     height: 2.5rem;
     bottom: 0;
  }
@@ -33,19 +34,27 @@ footer p{
  }
 
 .note{
-    background-color: #b3ab9d;
+    
+    background: url(./p1.jpg) no-repeat center center/cover;
     text-align: center;
     box-shadow: 0 0 10px 0 black;
     border-radius: 10px;
     padding: 17px 21px;
-    min-width: 300px;
-    max-width: 387px;
+    height: -webkit-fill-available;
     border: 5px solid #4d4949;
-    float: left;
-    min-height: 150px;
-    margin: 79px 25px;
+    margin: 23px 25px;
+    overflow-y: scroll;
+    height: -webkit-fill-available;
 }
-
+.notep {
+    background: #79716157;
+    padding: 12px 23px;
+    min-height: -webkit-fill-available;
+    height: max-content;
+}
+.note::-webkit-scrollbar {
+    display: none;
+  }
 .mh{
     text-align: center;
     padding-top: 15px;
@@ -56,36 +65,55 @@ footer p{
     padding: 25px 14px;
 }
 .note h1{
-    color: #ffffff;
+    color: #201802;
     font-family: "mcLaren",cursive;
     font-weight: 200;
 }
 .note p{
-    color:antiquewhite;
+    color: #333232;
     padding-top: 10px;   
+    
      font-size: 1.4rem;
 
 }
 .createarea{
     padding:0px 0px;
-    margin:0px 0px;
+    margin:2px 14px;
     display: flex;
+    width: 97%;
+    height: 98%;
     justify-content: center;
     align-items: center;
     
 }
-.noteform{
-    padding:16px 0px;
-    margin-top:28px;
-    background-color: #cdc9c2;
+
+.noteform {
+    padding: 16px 0px;
+    margin-top: 28px;
+    padding-left: 20px;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
     text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
     box-shadow: 0 0 10px 0 black;
+}
+.noteform::-webkit-scrollbar {
+    display: none;
+  }
+.cabtt{
+    right: 23px !important;
+    bottom: 0px !important;
+    top: 0px !important;
+    position: sticky !important;
+    float: right;
 }
 .c{
     width: 80%;
     padding: 0.5rem;
     border-radius: 22px;
     min-height: 100px;
+    margin: 32px 0px !important;
     border: none;
     outline: none;
     margin:5px;
@@ -99,14 +127,18 @@ footer p{
     margin:5px;
     border-radius: 22px;
     border: none;
-    outline: none;
+    outline: none;box-shadow: 1px 7px 2px 2px rgb(121 114 114);
     font-size: 1.3rem;
     
 }
 
+
 .bd{
-    right:-79px !important; 
-    bottom:-45px !important ;
+    right: 0px !important;
+    bottom: 0px !important;
+    top: 0px !important;
+    position: sticky !important;
+    float: right;
 }
 
 .b{
@@ -124,9 +156,11 @@ footer p{
   outline: none;
 }
 #lgpage{
-    background-color: #012539;
+    background: url(./flowerpot2.jpg) no-repeat center center/cover;
     min-height: 100vh;
+    width: 100vw;
     display: flex;
+    margin: 0px -17px;
     justify-content: center;
     align-items: center;
 }
@@ -136,7 +170,7 @@ footer p{
     min-height: 484px;
     display: flex;
     border: 5px solid #6d9f60;
-    background-color: #073047;
+    background: url(./flower\ pot.jpg) no-repeat center center/cover;
     flex-direction: column;
     border-radius: 14px;
     justify-content: center;
@@ -149,7 +183,7 @@ footer p{
     padding: 31px 23px;
     max-width: 420px;
     margin-top: 18px;
-    background-color: #073647;
+    background-color: #cac8b111;
     text-align: center;
     box-shadow: 0 0 3px 0 black;
 }
@@ -216,11 +250,12 @@ footer p{
     color:#6d9f60;
 }
 .an{
-    color: #82f7ed;
+    color: #05917f;
     font-size: medium;
     font-weight: 200;
 }
 .an:hover{
-    color:#d6d57a;
+    color:#795548;
     cursor: pointer;
 }
+

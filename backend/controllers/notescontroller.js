@@ -43,7 +43,7 @@ const createnote = expressAsyncHandler(  async (req, res)=>{
 
 
 });
-const deletenote = async (req,res)=>{
+const deletenote = expressAsyncHandler(async (req,res)=>{
     try {
         await Note.deleteOne({_id: req.params.noteId});
         res.json("");
@@ -52,9 +52,20 @@ const deletenote = async (req,res)=>{
         res.status(400);
         throw new Error(error.message);
     }
-}
+})
+const fetchnote= expressAsyncHandler(async(req,res)=>{
+    try {
+         const selectednote= await Note.find({_id:req.params.noteId});
+        res.json(selectednote);
+        
+    } catch (error) {
+        res.status(400);
+        throw new Error(error.message);
+    }
+})
+
 
 
 module.exports ={
-    createnote, allnotes, deletenote
+    createnote, allnotes, deletenote,fetchnote
 }
