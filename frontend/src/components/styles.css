@@ -234,9 +234,9 @@ footer p{
     right: -166px;
 }
 .lgeye{
-    position: relative; 
-    top: -38px;
-    right: -122px;
+    position: relative;
+    float: right;
+    top: -37px;
 }
 .switchlogin{
     font-size: 0.95rem;

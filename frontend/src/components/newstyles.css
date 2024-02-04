@@ -356,6 +356,7 @@ img.wimage {
     }
     .notelistmaincontainer {
         flex: 0.1;
+        border-radius: 45px 45px 41px 41px !important;
         
     }
     .welcomemaincontainer {
